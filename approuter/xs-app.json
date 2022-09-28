@@ -1,0 +1,19 @@
+{
+    "welcomeFile": "index.html",
+    "authenticationMethod": "none",
+    "routes": [
+        {
+            "source": "/IdentityAuthenticationServiceSCIM(.*)",
+            "target": "$1",
+            "destination": "IdentityAuthenticationServiceSCIM",
+            "authenticationType": "none",
+            "csrfProtection": false
+        },
+        {
+            "source": "^(.*)$",
+            "target": "$1",
+            "authenticationType": "none",
+            "localDir": "webapp/"
+        }
+    ]
+}
